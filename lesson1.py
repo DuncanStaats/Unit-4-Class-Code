@@ -26,7 +26,7 @@ while start_number > 0:
         print("0\n"
               "Blastoff!")
 
-# making a loop run to get user imput
+# making a loop run to get user input
 
 while True:
     user_age = int(input("Enter age or -1 to quit: "))
