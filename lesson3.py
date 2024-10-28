@@ -14,20 +14,22 @@ import random
 
 magic_number = random.randint(1,1000)
 try_count = 0
+
 while True:
     user_guess = int(input("Guess the magic number! "))
+   
     if user_guess > magic_number:
         print("Too high!")
-        try_count += 1
+        try_count = try_count + 1
+    
     elif user_guess < magic_number:
         print("Too low!")
-        try_count += 1
+        try_count = try_count + 1
+       
     elif user_guess == magic_number:
         print("You got it!")
         break
-    elif try_count == 7:
+
+    if try_count == 10: # because 2^10 is approx 1000
         print(f"Try again! The magic number was {magic_number}")
         break
-
-
-
