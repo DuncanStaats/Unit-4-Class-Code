@@ -12,6 +12,12 @@ Description: Nested Loop Practice Problems
 # . . . . . ...
 # . . . . . ...
 
+for row in range(1,11):
+    for column in range(1,11):
+        sum = row * column
+        print(f"{str(sum):<3}",end="")
+    print()
+
 # Problem 2
 # Ask a user for 2 numbers and make a multiplication table of that size
 
